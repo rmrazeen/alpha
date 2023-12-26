@@ -35,6 +35,9 @@ body {
    justify-content: space-around;
 
   }
+  .h1-span {
+    background-color:rgb(26, 32, 44); ;
+  }
 
   
   .banner-name::before{
@@ -44,9 +47,10 @@ body {
     width: 570px;
     position: absolute;
     top: 50%;
-    left:-600px;
+    left:-610px;
     right:0;
     background: rgb(245, 245, 245);
+    z-index: -2;
   }
   .banner-name{
     position: relative;
@@ -57,28 +61,39 @@ body {
     content:" ";
     display: block;
     height: 2px;
-    width: 250px;
+    width: 265px;
     position: absolute;
     top: 50%;
-    left:410px;
+    left:425px;
     right:0;
     background: rgb(255, 255, 255);
+    z-index: -2;
   }
   .profile-img:before{
     content:" ";
     display: block;
     height: 2px;
-    width: 290px;
+    width: 250px;
     position: absolute;
     top: 50%;
     left:-295px;
     right:0;
     background: rgb(255, 255, 255);
+    z-index: -2;
   }
   .profile-img{
     position: relative;
+    background-color: rgb(26, 32, 44); ;
   }
-
+  .profile-img {
+    border-radius: 50%;
+  }
+.profile-img:hover {
+  border: 3px solid aqua;
+  border-radius: 50%;
+  transition: 0.1s;
+  transform: scale(1.1);
+}
   nav {
     border: 2px solid black;
   }
